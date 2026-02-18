@@ -1,0 +1,20 @@
+{
+  "description": "Canonical soil types for AgroMitra. Use these values in dataset metadata (soil_type) and for crop recommendations.",
+  "canonical": [
+    { "value": "alluvial", "label": "Alluvial Soil" },
+    { "value": "black", "label": "Black Soil" },
+    { "value": "red", "label": "Red Soil" },
+    { "value": "laterite", "label": "Laterite Soil" },
+    { "value": "mountain", "label": "Mountain Soil" },
+    { "value": "saline", "label": "Saline Soil" },
+    { "value": "desert", "label": "Desert Soil" }
+  ],
+  "metadata_mapping": {
+    "loamy": "alluvial",
+    "clay": "black",
+    "sandy": "alluvial",
+    "silty": "alluvial",
+    "peaty": "black",
+    "chalky": "laterite"
+  }
+}

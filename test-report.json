@@ -1,0 +1,158 @@
+{
+  "timestamp": "2025-09-20T08:15:48.288Z",
+  "summary": {
+    "total": 25,
+    "passed": 25,
+    "failed": 0,
+    "successRate": 100
+  },
+  "details": [
+    {
+      "test": "Server Health Check",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "User Registration",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "User Login",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Get User Profile",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Get All Crops",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Crop Recommendation",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Get Specific Crop",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Crop Harvesting Guidance",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Crop Pest Control",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Crop Irrigation",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Crop Fertilization",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Market Prices",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Chat Message",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Chat History",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Create Calendar",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Get Calendars",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Upcoming Activities",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Voice Languages",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Voice Formats",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Training Stats",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Training Performance",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Add Training Data",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Model Test",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Multilingual Queries",
+      "status": "PASSED",
+      "error": null
+    },
+    {
+      "test": "Frontend Routes",
+      "status": "PASSED",
+      "error": null
+    }
+  ],
+  "testAccounts": [
+    {
+      "email": "testfarmer1758356126026@agromitra.com",
+      "password": "testpassword123",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGNlNjI5ZWI3YjRhZmU3M2ZlY2ExZmEiLCJpYXQiOjE3NTgzNTYxMjYsImV4cCI6MTc1ODk2MDkyNn0.8gE4X6YkoZCP3whQauiiefYs185yIJHSJAUS7AsZLGU",
+      "user": {
+        "id": "68ce629eb7b4afe73feca1fa",
+        "name": "Test Farmer",
+        "email": "testfarmer1758356126026@agromitra.com",
+        "phone": "+919876543226",
+        "preferredLanguage": "hindi",
+        "location": {
+          "state": "Uttar Pradesh",
+          "district": "Lucknow",
+          "village": "Test Village"
+        },
+        "soilType": "loamy",
+        "farmSize": 5,
+        "experience": "intermediate"
+      }
+    }
+  ]
+}

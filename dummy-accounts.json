@@ -1,0 +1,78 @@
+{
+  "dummy_accounts": [
+    {
+      "id": "68ce70a958014dcf7371146a",
+      "name": "John Farmer",
+      "email": "john.farmer@example.com",
+      "phone": "1234567890",
+      "password": "password123",
+      "preferredLanguage": "english",
+      "location": {
+        "state": "California",
+        "district": "Fresno County",
+        "village": "Fresno",
+        "coordinates": {
+          "latitude": 36.7378,
+          "longitude": -119.7871
+        }
+      },
+      "soilType": "loamy",
+      "farmSize": 25.5,
+      "experience": "intermediate",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGNlNzBhOTU4MDE0ZGNmNzM3MTE0NmEiLCJpYXQiOjE3NTgzNTk3MjEsImV4cCI6MTc1ODk2NDUyMX0.3KaDT6F47Y-V3g8z4Zp7pp7DRWLf2JaAdn-OQntWkp8",
+      "description": "Intermediate farmer from California with loamy soil and 25.5 acres of land"
+    },
+    {
+      "id": "68ce70af58014dcf7371146d",
+      "name": "Maria Garcia",
+      "email": "maria.garcia@example.com",
+      "phone": "9876543210",
+      "password": "password123",
+      "preferredLanguage": "hindi",
+      "location": {
+        "state": "Punjab",
+        "district": "Amritsar",
+        "village": "Amritsar",
+        "coordinates": {
+          "latitude": 31.634,
+          "longitude": 74.8723
+        }
+      },
+      "soilType": "clay",
+      "farmSize": 15.0,
+      "experience": "beginner",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGNlNzBhZjU4MDE0ZGNmNzM3MTE0NmQiLCJpYXQiOjE3NTgzNTk3MjcsImV4cCI6MTc1ODk2NDUyN30.JxAy1APL87rNZYnsk5XBAvzcXLSoP0bAuIgxISDA_kY",
+      "description": "Beginner farmer from Punjab, India with clay soil and 15 acres of land. Prefers Hindi language."
+    },
+    {
+      "id": "68ce70b458014dcf73711470",
+      "name": "Rajesh Kumar",
+      "email": "rajesh.kumar@example.com",
+      "phone": "5555555555",
+      "password": "password123",
+      "preferredLanguage": "telugu",
+      "location": {
+        "state": "Andhra Pradesh",
+        "district": "Guntur",
+        "village": "Guntur",
+        "coordinates": {
+          "latitude": 16.3067,
+          "longitude": 80.4365
+        }
+      },
+      "soilType": "sandy",
+      "farmSize": 40.0,
+      "experience": "expert",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGNlNzBiNDU4MDE0ZGNmNzM3MTE0NzAiLCJpYXQiOjE3NTgzNTk3MzIsImV4cCI6MTc1ODk2NDUzMn0.7-EDDF9VTeXIkjXJ08wsgJLr7iWRXq9G5BuG-IIT04A",
+      "description": "Expert farmer from Andhra Pradesh, India with sandy soil and 40 acres of land. Prefers Telugu language."
+    }
+  ],
+  "test_credentials": {
+    "note": "All accounts use the same password: 'password123'",
+    "login_endpoint": "POST http://localhost:3001/api/auth/login",
+    "registration_endpoint": "POST http://localhost:3001/api/auth/register",
+    "profile_endpoint": "GET http://localhost:3001/api/auth/profile (requires Authorization header with Bearer token)"
+  },
+  "created_at": "2025-01-22T10:45:00Z",
+  "purpose": "Dummy accounts for testing AgroMitra application functionality"
+}

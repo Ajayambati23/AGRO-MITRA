@@ -1,0 +1,55 @@
+{
+  "name": "agromitra-ai-chatbot",
+  "version": "1.0.0",
+  "description": "A Multilingual AI Chatbot for Farmers and Agricultural Students",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "npm install",
+    "test": "jest",
+    "seed": "node scripts/seedData.js",
+    "production": "NODE_ENV=production node server.js"
+  },
+  "keywords": [
+    "agriculture",
+    "ai",
+    "chatbot",
+    "multilingual",
+    "voice",
+    "farming"
+  ],
+  "author": "AgroMitra Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "compromise": "^14.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.29.4",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "natural": "^6.7.0",
+    "node-cron": "^3.0.3",
+    "node-nlp": "^4.27.0",
+    "nodemailer": "^6.9.7",
+    "openai": "^4.20.1",
+    "socket.io": "^4.7.4",
+    "speech-to-text": "^1.0.0",
+    "text-to-speech": "^1.0.0",
+    "twilio": "^4.23.0",
+    "weather-js": "^2.0.0",
+    "xmlbuilder": "^13.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  }
+}

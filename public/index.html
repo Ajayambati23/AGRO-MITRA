@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroMitra - AI Chatbot for Farmers</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 1200px;
+            height: 80vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: linear-gradient(180deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .logo p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .user-info {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .user-info h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .user-info p {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .nav-menu {
+            flex: 1;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .nav-item i {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .language-selector {
+            margin-top: auto;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        .language-selector select {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background: white;
+            color: #333;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h2 {
+            color: #333;
+            font-size: 20px;
+        }
+
+        .voice-toggle {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .voice-toggle:hover {
+            background: #45a049;
+        }
+
+        .voice-toggle.recording {
+            background: #f44336;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-content {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            position: relative;
+        }
+
+        .message.user .message-content {
+            background: #4CAF50;
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.bot .message-content {
+            background: white;
+            color: #333;
+            border: 1px solid #e9ecef;
+            border-bottom-left-radius: 4px;
+        }
+
+        .message-time {
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        .message-actions {
+            display: flex;
+            gap: 5px;
+            margin-top: 8px;
+        }
+
+        .action-btn {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background: #e9ecef;
+        }
+
+        .chat-input {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e9ecef;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .input-group {
+            flex: 1;
+            position: relative;
+        }
+
+        .chat-input input {
+            width: 100%;
+            padding: 12px 50px 12px 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 25px;
+            font-size: 14px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .chat-input input:focus {
+            border-color: #4CAF50;
+        }
+
+        .input-actions {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 5px;
+        }
+
+        .input-btn {
+            background: none;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+
+        .input-btn:hover {
+            color: #4CAF50;
+        }
+
+        .send-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background: #45a049;
+        }
+
+        .send-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .crop-recommendation {
+            background: #e8f5e8;
+            border: 1px solid #4CAF50;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .crop-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .crop-card h4 {
+            color: #4CAF50;
+            margin-bottom: 8px;
+        }
+
+        .crop-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #666;
+        }
+
+        .loading i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .success {
+            background: #e8f5e8;
+            color: #2e7d32;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .close {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+            }
+            
+            .sidebar {
+                width: 250px;
+            }
+            
+            .message-content {
+                max-width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1><i class="fas fa-seedling"></i> AgroMitra</h1>
+                <p>AI Chatbot for Farmers</p>
+            </div>
+            
+            <div class="user-info" id="userInfo" style="display: none;">
+                <h3 id="userName">User Name</h3>
+                <p id="userLocation">Location</p>
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item active" onclick="showSection('chat')">
+                    <i class="fas fa-comments"></i>
+                    <span>Chat</span>
+                </div>
+                <div class="nav-item" onclick="showSection('crops')">
+                    <i class="fas fa-seedling"></i>
+                    <span>Crop Recommendation</span>
+                </div>
+                <div class="nav-item" onclick="showSection('calendar')">
+                    <i class="fas fa-calendar"></i>
+                    <span>Calendar</span>
+                </div>
+                <div class="nav-item" onclick="showSection('guidance')">
+                    <i class="fas fa-book"></i>
+                    <span>Harvesting Guide</span>
+                </div>
+                <div class="nav-item" onclick="showSection('pest')">
+                    <i class="fas fa-bug"></i>
+                    <span>Pest Control</span>
+                </div>
+                <div class="nav-item" onclick="showSection('weather')">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span>Weather</span>
+                </div>
+            </div>
+            
+            <div class="language-selector">
+                <label for="languageSelect">Language:</label>
+                <select id="languageSelect" onchange="changeLanguage()">
+                    <option value="english">English</option>
+                    <option value="hindi">हिन्दी</option>
+                    <option value="telugu">తెలుగు</option>
+                    <option value="kannada">ಕನ್ನಡ</option>
+                    <option value="tamil">தமிழ்</option>
+                    <option value="malayalam">മലയാളം</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <h2 id="sectionTitle">Chat with AgroMitra</h2>
+                <button class="voice-toggle" id="voiceToggle" onclick="toggleVoiceRecording()">
+                    <i class="fas fa-microphone"></i>
+                    <span>Voice</span>
+                </button>
+            </div>
+
+            <!-- Chat Container -->
+            <div class="chat-container" id="chatContainer">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot">
+                        <div class="message-content">
+                            <div>Welcome to AgroMitra! I'm here to help you with your agricultural needs. How can I assist you today?</div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input">
+                    <div class="input-group">
+                        <input type="text" id="messageInput" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+                        <div class="input-actions">
+                            <button class="input-btn" onclick="attachImage()" title="Attach Image">
+                                <i class="fas fa-image"></i>
+                            </button>
+                            <button class="input-btn" onclick="attachFile()" title="Attach File">
+                                <i class="fas fa-paperclip"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login to AgroMitra</h3>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn btn-secondary" onclick="showRegisterModal()">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Register for AgroMitra</h3>
+                <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Full Name:</label>
+                    <input type="text" id="regName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">Phone:</label>
+                    <input type="tel" id="regPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password:</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="regLanguage">Preferred Language:</label>
+                    <select id="regLanguage">
+                        <option value="english">English</option>
+                        <option value="hindi">हिन्दी</option>
+                        <option value="telugu">తెలుగు</option>
+                        <option value="kannada">ಕನ್ನಡ</option>
+                        <option value="tamil">தமிழ்</option>
+                        <option value="malayalam">മലയാളം</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="regLocation">Location (State):</label>
+                    <input type="text" id="regLocation" placeholder="e.g., Karnataka">
+                </div>
+                <div class="form-group">
+                    <label for="regSoilType">Soil Type:</label>
+                    <select id="regSoilType">
+                        <option value="loamy">Loamy</option>
+                        <option value="clay">Clay</option>
+                        <option value="sandy">Sandy</option>
+                        <option value="silty">Silty</option>
+                        <option value="peaty">Peaty</option>
+                        <option value="chalky">Chalky</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <button type="button" class="btn btn-secondary" onclick="showLoginModal()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let currentUser = null;
+        let isRecording = false;
+        let mediaRecorder = null;
+        let audioChunks = [];
+        let currentLanguage = 'english';
+        let currentSection = 'chat';
+
+        // Translations
+        const translations = {
+            english: {
+                welcome: "Welcome to AgroMitra! I'm here to help you with your agricultural needs.",
+                cropRecommendation: "Crop Recommendation",
+                harvestingGuidance: "Harvesting Guidance",
+                pestControl: "Pest Control",
+                irrigation: "Irrigation",
+                calendar: "Calendar",
+                weather: "Weather",
+                chat: "Chat with AgroMitra",
+                voice: "Voice",
+                recording: "Recording...",
+                stop: "Stop",
+                typeMessage: "Type your message here...",
+                send: "Send",
+                login: "Login to AgroMitra",
+                register: "Register for AgroMitra",
+                fullName: "Full Name",
+                email: "Email",
+                phone: "Phone",
+                password: "Password",
+                preferredLanguage: "Preferred Language",
+                location: "Location (State)",
+                soilType: "Soil Type"
+            },
+            hindi: {
+                welcome: "आपका स्वागत है! मैं आपकी कृषि में मदद करने के लिए यहाँ हूँ।",
+                cropRecommendation: "फसल सुझाव",
+                harvestingGuidance: "कटाई मार्गदर्शन",
+                pestControl: "कीट नियंत्रण",
+                irrigation: "सिंचाई",
+                calendar: "कैलेंडर",
+                weather: "मौसम",
+                chat: "AgroMitra के साथ चैट करें",
+                voice: "आवाज़",
+                recording: "रिकॉर्डिंग...",
+                stop: "रोकें",
+                typeMessage: "यहाँ अपना संदेश टाइप करें...",
+                send: "भेजें",
+                login: "AgroMitra में लॉगिन करें",
+                register: "AgroMitra के लिए रजिस्टर करें",
+                fullName: "पूरा नाम",
+                email: "ईमेल",
+                phone: "फोन",
+                password: "पासवर्ड",
+                preferredLanguage: "पसंदीदा भाषा",
+                location: "स्थान (राज्य)",
+                soilType: "मिट्टी का प्रकार"
+            }
+        };
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuthStatus();
+            setupEventListeners();
+        });
+
+        function checkAuthStatus() {
+            const token = localStorage.getItem('token');
+            if (token) {
+                // Verify token and get user info
+                fetch('/api/auth/profile', {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.user) {
+                        currentUser = data.user;
+                        updateUserInfo();
+                    } else {
+                        showLoginModal();
+                    }
+                })
+                .catch(error => {
+                    console.error('Auth check failed:', error);
+                    showLoginModal();
+                });
+            } else {
+                showLoginModal();
+            }
+        }
+
+        function updateUserInfo() {
+            if (currentUser) {
+                document.getElementById('userName').textContent = currentUser.name;
+                document.getElementById('userLocation').textContent = currentUser.location?.state || 'Unknown';
+                document.getElementById('userInfo').style.display = 'block';
+                document.getElementById('languageSelect').value = currentUser.preferredLanguage;
+                currentLanguage = currentUser.preferredLanguage;
+            }
+        }
+
+        function setupEventListeners() {
+            // Login form
+            document.getElementById('loginForm').addEventListener('submit', handleLogin);
+            
+            // Register form
+            document.getElementById('registerForm').addEventListener('submit', handleRegister);
+        }
+
+        function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.token) {
+                    localStorage.setItem('token', data.token);
+                    currentUser = data.user;
+                    updateUserInfo();
+                    closeModal('loginModal');
+                    addMessage('bot', data.message || 'Login successful!');
+                } else {
+                    showError(data.message || 'Login failed');
+                }
+            })
+            .catch(error => {
+                console.error('Login error:', error);
+                showError('Login failed. Please try again.');
+            });
+        }
+
+        function handleRegister(e) {
+            e.preventDefault();
+            const formData = {
+                name: document.getElementById('regName').value,
+                email: document.getElementById('regEmail').value,
+                phone: document.getElementById('regPhone').value,
+                password: document.getElementById('regPassword').value,
+                preferredLanguage: document.getElementById('regLanguage').value,
+                location: {
+                    state: document.getElementById('regLocation').value
+                },
+                soilType: document.getElementById('regSoilType').value
+            };
+
+            fetch('/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.token) {
+                    localStorage.setItem('token', data.token);
+                    currentUser = data.user;
+                    updateUserInfo();
+                    closeModal('registerModal');
+                    addMessage('bot', data.message || 'Registration successful!');
+                } else {
+                    showError(data.message || 'Registration failed');
+                }
+            })
+            .catch(error => {
+                console.error('Registration error:', error);
+                showError('Registration failed. Please try again.');
+            });
+        }
+
+        function showLoginModal() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+
+        function showRegisterModal() {
+            closeModal('loginModal');
+            document.getElementById('registerModal').style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        function showSection(section) {
+            currentSection = section;
+            
+            // Update active nav item
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.closest('.nav-item').classList.add('active');
+            
+            // Update section title
+            const titles = {
+                chat: translations[currentLanguage].chat,
+                crops: translations[currentLanguage].cropRecommendation,
+                calendar: translations[currentLanguage].calendar,
+                guidance: translations[currentLanguage].harvestingGuidance,
+                pest: translations[currentLanguage].pestControl,
+                weather: translations[currentLanguage].weather
+            };
+            
+            document.getElementById('sectionTitle').textContent = titles[section] || section;
+            
+            // Show/hide appropriate content
+            if (section === 'chat') {
+                document.getElementById('chatContainer').style.display = 'flex';
+            } else {
+                document.getElementById('chatContainer').style.display = 'none';
+                // Add other section content here
+            }
+        }
+
+        function changeLanguage() {
+            currentLanguage = document.getElementById('languageSelect').value;
+            // Update UI elements with new language
+            updateUI();
+        }
+
+        function updateUI() {
+            // Update placeholders and text based on current language
+            document.getElementById('messageInput').placeholder = translations[currentLanguage].typeMessage;
+            document.getElementById('sectionTitle').textContent = translations[currentLanguage].chat;
+        }
+
+        function addMessage(type, content, timestamp = null) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}`;
+            
+            const time = timestamp || new Date().toLocaleTimeString();
+            
+            messageDiv.innerHTML = `
+                <div class="message-content">
+                    <div>${content}</div>
+                    <div class="message-time">${time}</div>
+                </div>
+            `;
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message
+            addMessage('user', message);
+            input.value = '';
+            
+            // Show loading
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message bot';
+            loadingDiv.innerHTML = `
+                <div class="message-content">
+                    <div class="loading">
+                        <i class="fas fa-spinner"></i>
+                        <span>Processing your message...</span>
+                    </div>
+                </div>
+            `;
+            document.getElementById('chatMessages').appendChild(loadingDiv);
+            
+            // Send to backend
+            fetch('/api/chat/message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                },
+                body: JSON.stringify({
+                    message: message,
+                    language: currentLanguage
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Remove loading
+                document.querySelector('.loading').closest('.message').remove();
+                
+                if (data.success) {
+                    addMessage('bot', data.response.message || data.response);
+                } else {
+                    addMessage('bot', 'Sorry, I encountered an error. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Chat error:', error);
+                document.querySelector('.loading').closest('.message').remove();
+                addMessage('bot', 'Sorry, I encountered an error. Please try again.');
+            });
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+
+        function toggleVoiceRecording() {
+            if (!isRecording) {
+                startVoiceRecording();
+            } else {
+                stopVoiceRecording();
+            }
+        }
+
+        function startVoiceRecording() {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    audioChunks = [];
+                    
+                    mediaRecorder.ondataavailable = event => {
+                        audioChunks.push(event.data);
+                    };
+                    
+                    mediaRecorder.onstop = () => {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        sendVoiceMessage(audioBlob);
+                    };
+                    
+                    mediaRecorder.start();
+                    isRecording = true;
+                    
+                    const voiceToggle = document.getElementById('voiceToggle');
+                    voiceToggle.classList.add('recording');
+                    voiceToggle.innerHTML = '<i class="fas fa-stop"></i><span>Stop</span>';
+                })
+                .catch(error => {
+                    console.error('Error accessing microphone:', error);
+                    showError('Microphone access denied. Please allow microphone access.');
+                });
+        }
+
+        function stopVoiceRecording() {
+            if (mediaRecorder && isRecording) {
+                mediaRecorder.stop();
+                isRecording = false;
+                
+                const voiceToggle = document.getElementById('voiceToggle');
+                voiceToggle.classList.remove('recording');
+                voiceToggle.innerHTML = '<i class="fas fa-microphone"></i><span>Voice</span>';
+            }
+        }
+
+        function sendVoiceMessage(audioBlob) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                const base64Audio = reader.result.split(',')[1];
+                
+                fetch('/api/chat/voice', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    },
+                    body: JSON.stringify({
+                        audioData: base64Audio,
+                        language: currentLanguage
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        addMessage('user', data.originalText);
+                        addMessage('bot', data.response.message || data.response);
+                    } else {
+                        addMessage('bot', 'Sorry, I couldn\'t process your voice message.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Voice message error:', error);
+                    addMessage('bot', 'Sorry, I couldn\'t process your voice message.');
+                });
+            };
+            reader.readAsDataURL(audioBlob);
+        }
+
+        function attachImage() {
+            // Implement image attachment
+            console.log('Attach image');
+        }
+
+        function attachFile() {
+            // Implement file attachment
+            console.log('Attach file');
+        }
+
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            document.getElementById('chatMessages').appendChild(errorDiv);
+            
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 5000);
+        }
+
+        function showSuccess(message) {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success';
+            successDiv.textContent = message;
+            document.getElementById('chatMessages').appendChild(successDiv);
+            
+            setTimeout(() => {
+                successDiv.remove();
+            }, 3000);
+        }
+
+        // Close modals when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

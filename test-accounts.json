@@ -1,0 +1,22 @@
+[
+  {
+    "email": "testfarmer1758356126026@agromitra.com",
+    "password": "testpassword123",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGNlNjI5ZWI3YjRhZmU3M2ZlY2ExZmEiLCJpYXQiOjE3NTgzNTYxMjYsImV4cCI6MTc1ODk2MDkyNn0.8gE4X6YkoZCP3whQauiiefYs185yIJHSJAUS7AsZLGU",
+    "user": {
+      "id": "68ce629eb7b4afe73feca1fa",
+      "name": "Test Farmer",
+      "email": "testfarmer1758356126026@agromitra.com",
+      "phone": "+919876543226",
+      "preferredLanguage": "hindi",
+      "location": {
+        "state": "Uttar Pradesh",
+        "district": "Lucknow",
+        "village": "Test Village"
+      },
+      "soilType": "loamy",
+      "farmSize": 5,
+      "experience": "intermediate"
+    }
+  }
+]

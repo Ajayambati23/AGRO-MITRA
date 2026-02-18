@@ -1,0 +1,415 @@
+[
+  {
+    "text": "What crop should I plant in kharif season?",
+    "category": "crop_recommendation",
+    "language": "english",
+    "metadata": {
+      "season": "kharif",
+      "soil_type": "alluvial",
+      "region": "north_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "crop_recommendation",
+      "crops": ["rice", "maize", "cotton", "sugarcane"],
+      "reasoning": "These crops are suitable for kharif season in alluvial soil"
+    },
+    "timestamp": "2024-01-15T10:30:00Z"
+  },
+  {
+    "text": "When should I harvest rice?",
+    "category": "harvesting_guidance",
+    "language": "english",
+    "metadata": {
+      "crop": "rice",
+      "season": "kharif",
+      "region": "general",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "harvesting_guidance",
+      "timing": "120-150 days after planting",
+      "indicators": ["grains turn golden yellow", "moisture content 20-22%", "85% of grains mature"]
+    },
+    "timestamp": "2024-01-15T10:31:00Z"
+  },
+  {
+    "text": "How to control aphids on wheat?",
+    "category": "pest_control",
+    "language": "english",
+    "metadata": {
+      "crop": "wheat",
+      "pest": "aphids",
+      "region": "general",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "pest_control",
+      "methods": ["acephate spray", "neem oil", "biological control"],
+      "dosage": "1.5g per liter",
+      "safety_period": "7 days"
+    },
+    "timestamp": "2024-01-15T10:32:00Z"
+  },
+  {
+    "text": "How often should I water tomatoes?",
+    "category": "irrigation",
+    "language": "english",
+    "metadata": {
+      "crop": "tomato",
+      "season": "year_round",
+      "region": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "irrigation",
+      "frequency": "every 2-3 days",
+      "method": "drip irrigation recommended",
+      "water_requirement": "400 liters per acre"
+    },
+    "timestamp": "2024-01-15T10:33:00Z"
+  },
+  {
+    "text": "फसल सुझाव चाहिए",
+    "category": "crop_recommendation",
+    "language": "hindi",
+    "metadata": {
+      "season": "rabi",
+      "soil_type": "black",
+      "region": "north_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "crop_recommendation",
+      "crops": ["गेहूं", "सरसों", "चना", "आलू"],
+      "reasoning": "ये फसलें रबी सीजन में चिकनी मिट्टी के लिए उपयुक्त हैं"
+    },
+    "timestamp": "2024-01-15T10:34:00Z"
+  },
+  {
+    "text": "कब काटें गेहूं?",
+    "category": "harvesting_guidance",
+    "language": "hindi",
+    "metadata": {
+      "crop": "wheat",
+      "season": "rabi",
+      "region": "north_india",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "harvesting_guidance",
+      "timing": "120-140 दिन बाद",
+      "indicators": ["दाने सुनहरे भूरे हो जाएं", "नमी 12-14%", "पत्ते पीले हो जाएं"]
+    },
+    "timestamp": "2024-01-15T10:35:00Z"
+  },
+  {
+    "text": "कीट नियंत्रण कैसे करें?",
+    "category": "pest_control",
+    "language": "hindi",
+    "metadata": {
+      "crop": "general",
+      "pest": "general",
+      "region": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "pest_control",
+      "methods": ["नीम का तेल", "जैविक नियंत्रण", "रासायनिक कीटनाशक"],
+      "prevention": "स्वच्छ खेती, फसल चक्र, समय पर निगरानी"
+    },
+    "timestamp": "2024-01-15T10:36:00Z"
+  },
+  {
+    "text": "पानी कब दें?",
+    "category": "irrigation",
+    "language": "hindi",
+    "metadata": {
+      "crop": "general",
+      "season": "general",
+      "region": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "irrigation",
+      "timing": "सुबह या शाम को",
+      "frequency": "फसल के अनुसार",
+      "method": "ड्रिप सिंचाई सबसे अच्छी"
+    },
+    "timestamp": "2024-01-15T10:37:00Z"
+  },
+  {
+    "text": "खाद कब डालें?",
+    "category": "fertilization",
+    "language": "hindi",
+    "metadata": {
+      "crop": "general",
+      "season": "general",
+      "region": "general",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "fertilization",
+      "timing": "बुवाई के समय, वृद्धि के दौरान",
+      "types": ["NPK", "जैविक खाद", "सूक्ष्म पोषक तत्व"],
+      "method": "मिट्टी परीक्षण के बाद"
+    },
+    "timestamp": "2024-01-15T10:38:00Z"
+  },
+  {
+    "text": "పంట సిఫార్సు కావాలి",
+    "category": "crop_recommendation",
+    "language": "telugu",
+    "metadata": {
+      "season": "kharif",
+      "soil_type": "alluvial",
+      "region": "south_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "crop_recommendation",
+      "crops": ["వరి", "మొక్కజొన్న", "పత్తి", "చెరకు"],
+      "reasoning": "ఈ పంటలు ఖరీఫ్ సీజన్లో ఇసుక నేలకు అనుకూలం"
+    },
+    "timestamp": "2024-01-15T10:39:00Z"
+  },
+  {
+    "text": "ఎప్పుడు కోయాలి వరి?",
+    "category": "harvesting_guidance",
+    "language": "telugu",
+    "metadata": {
+      "crop": "rice",
+      "season": "kharif",
+      "region": "south_india",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "harvesting_guidance",
+      "timing": "120-150 రోజుల తర్వాత",
+      "indicators": ["ధాన్యం బంగారు పసుపు రంగులోకి మారుతుంది", "తేమ 20-22%"]
+    },
+    "timestamp": "2024-01-15T10:40:00Z"
+  },
+  {
+    "text": "కీటక నియంత్రణ ఎలా?",
+    "category": "pest_control",
+    "language": "telugu",
+    "metadata": {
+      "crop": "general",
+      "pest": "general",
+      "region": "south_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "pest_control",
+      "methods": ["వేప నూనె", "జీవ నియంత్రణ", "రసాయన కీటకనాశకాలు"],
+      "prevention": "శుభ్రమైన వ్యవసాయం, పంట చక్రం"
+    },
+    "timestamp": "2024-01-15T10:41:00Z"
+  },
+  {
+    "text": "నీరు ఎప్పుడు ఇవ్వాలి?",
+    "category": "irrigation",
+    "language": "telugu",
+    "metadata": {
+      "crop": "general",
+      "season": "general",
+      "region": "south_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "irrigation",
+      "timing": "ఉదయం లేదా సాయంత్రం",
+      "frequency": "పంట ప్రకారం",
+      "method": "డ్రిప్ సేచన ఉత్తమం"
+    },
+    "timestamp": "2024-01-15T10:42:00Z"
+  },
+  {
+    "text": "ఎరువు ఎప్పుడు వేయాలి?",
+    "category": "fertilization",
+    "language": "telugu",
+    "metadata": {
+      "crop": "general",
+      "season": "general",
+      "region": "south_india",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "fertilization",
+      "timing": "నాటే సమయంలో, వృద్ధి సమయంలో",
+      "types": ["NPK", "జైవిక ఎరువులు", "సూక్ష్మ పోషకాలు"],
+      "method": "నేల పరీక్ష తర్వాత"
+    },
+    "timestamp": "2024-01-15T10:43:00Z"
+  },
+  {
+    "text": "What is the current price of rice?",
+    "category": "market_price",
+    "language": "english",
+    "metadata": {
+      "crop": "rice",
+      "region": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "market_price",
+      "price": "₹2500 per quintal",
+      "trend": "stable",
+      "unit": "per quintal",
+      "source": "APMC rates"
+    },
+    "timestamp": "2024-01-15T10:44:00Z"
+  },
+  {
+    "text": "When to apply fertilizer?",
+    "category": "fertilization",
+    "language": "english",
+    "metadata": {
+      "crop": "general",
+      "season": "general",
+      "region": "general",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "fertilization",
+      "timing": "at planting, during growth stages",
+      "types": ["NPK", "organic manure", "micronutrients"],
+      "method": "based on soil test results"
+    },
+    "timestamp": "2024-01-15T10:45:00Z"
+  },
+  {
+    "text": "Weather forecast for farming?",
+    "category": "weather",
+    "language": "english",
+    "metadata": {
+      "region": "general",
+      "season": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "weather",
+      "forecast": "Check local weather service",
+      "advice": "Plan activities based on weather conditions",
+      "sources": ["IMD", "Weather apps", "Local forecasts"]
+    },
+    "timestamp": "2024-01-15T10:46:00Z"
+  },
+  {
+    "text": "बाजार मूल्य क्या है?",
+    "category": "market_price",
+    "language": "hindi",
+    "metadata": {
+      "crop": "general",
+      "region": "north_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "market_price",
+      "advice": "स्थानीय मंडी में जांचें",
+      "sources": ["APMC", "e-NAM", "कृषि मंत्रालय"],
+      "trend": "मौसमी उतार-चढ़ाव"
+    },
+    "timestamp": "2024-01-15T10:47:00Z"
+  },
+  {
+    "text": "मौसम पूर्वानुमान?",
+    "category": "weather",
+    "language": "hindi",
+    "metadata": {
+      "region": "north_india",
+      "season": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "weather",
+      "forecast": "स्थानीय मौसम सेवा देखें",
+      "advice": "मौसम के अनुसार गतिविधियों की योजना बनाएं",
+      "sources": ["भारतीय मौसम विभाग", "मौसम ऐप"]
+    },
+    "timestamp": "2024-01-15T10:48:00Z"
+  },
+  {
+    "text": "మార్కెట్ ధర ఎంత?",
+    "category": "market_price",
+    "language": "telugu",
+    "metadata": {
+      "crop": "general",
+      "region": "south_india",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "market_price",
+      "advice": "స్థానిక మార్కెట్లో తనిఖీ చేయండి",
+      "sources": ["APMC", "e-NAM", "వ్యవసాయ మంత్రిత్వ శాఖ"],
+      "trend": "కాలానుగుణ మార్పులు"
+    },
+    "timestamp": "2024-01-15T10:49:00Z"
+  },
+  {
+    "text": "వాతావరణ అంచనా?",
+    "category": "weather",
+    "language": "telugu",
+    "metadata": {
+      "region": "south_india",
+      "season": "general",
+      "difficulty": "beginner"
+    },
+    "expected_response": {
+      "type": "weather",
+      "forecast": "స్థానిక వాతావరణ సేవ చూడండి",
+      "advice": "వాతావరణం ప్రకారం కార్యకలాపాలను ప్లాన్ చేయండి",
+      "sources": ["భారతీయ వాతావరణ శాఖ", "వాతావరణ యాప్లు"]
+    },
+    "timestamp": "2024-01-15T10:50:00Z"
+  },
+  {
+    "text": "How to increase crop yield?",
+    "category": "general",
+    "language": "english",
+    "metadata": {
+      "crop": "general",
+      "region": "general",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "general",
+      "advice": "Use quality seeds, proper irrigation, balanced fertilization, pest control, and good agricultural practices",
+      "tips": ["Soil testing", "Crop rotation", "Timely operations", "Use of technology"]
+    },
+    "timestamp": "2024-01-15T10:51:00Z"
+  },
+  {
+    "text": "फसल उत्पादन कैसे बढ़ाएं?",
+    "category": "general",
+    "language": "hindi",
+    "metadata": {
+      "crop": "general",
+      "region": "north_india",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "general",
+      "advice": "गुणवत्तापूर्ण बीज, उचित सिंचाई, संतुलित खाद, कीट नियंत्रण और अच्छी कृषि पद्धतियों का उपयोग करें",
+      "tips": ["मिट्टी परीक्षण", "फसल चक्र", "समय पर कार्य", "तकनीक का उपयोग"]
+    },
+    "timestamp": "2024-01-15T10:52:00Z"
+  },
+  {
+    "text": "పంట దిగుబడి ఎలా పెంచాలి?",
+    "category": "general",
+    "language": "telugu",
+    "metadata": {
+      "crop": "general",
+      "region": "south_india",
+      "difficulty": "intermediate"
+    },
+    "expected_response": {
+      "type": "general",
+      "advice": "నాణ్యమైన విత్తనాలు, సరైన సేచన, సమతుల్య ఎరువులు, కీటక నియంత్రణ మరియు మంచి వ్యవసాయ పద్ధతులను ఉపయోగించండి",
+      "tips": ["నేల పరీక్ష", "పంట చక్రం", "సమయానుకూల కార్యకలాపాలు", "సాంకేతికత వినియోగం"]
+    },
+    "timestamp": "2024-01-15T10:53:00Z"
+  }
+]

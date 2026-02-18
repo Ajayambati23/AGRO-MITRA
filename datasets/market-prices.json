@@ -1,0 +1,1538 @@
+﻿[
+    {
+        "text":  "Market price of rice in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:10:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of rice in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:11:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of rice in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:12:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of rice in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:13:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of wheat in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:14:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of wheat in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:15:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of wheat in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:16:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of wheat in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:17:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of maize in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:18:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of maize in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:19:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of maize in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:20:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of maize in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:21:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of cotton in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:22:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of cotton in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:23:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of cotton in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:24:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of cotton in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:25:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of chickpea in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:26:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of chickpea in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:27:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of chickpea in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:28:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of chickpea in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:29:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of groundnut in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:30:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of groundnut in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:31:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of groundnut in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:32:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of groundnut in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:33:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of millet in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:34:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of millet in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:35:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of millet in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:36:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of millet in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:37:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of sugarcane in delhi_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:38:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of sugarcane in hyderabad_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:39:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of sugarcane in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:40:00.0000000+05:30"
+    },
+    {
+        "text":  "Market price of sugarcane in bengaluru_market",
+        "category":  "market_price",
+        "language":  "english",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:41:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of rice in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:42:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of rice in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:43:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of rice in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:44:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of rice in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:45:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of wheat in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:46:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of wheat in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:47:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of wheat in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:48:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of wheat in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:49:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of maize in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:50:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of maize in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:51:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of maize in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:52:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of maize in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:53:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of cotton in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:54:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of cotton in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:55:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of cotton in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:56:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of cotton in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:57:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of chickpea in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:58:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of chickpea in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T14:59:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of chickpea in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:00:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of chickpea in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:01:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of groundnut in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:02:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of groundnut in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:03:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of groundnut in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:04:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of groundnut in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:05:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of millet in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:06:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of millet in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:07:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of millet in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:08:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of millet in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:09:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of sugarcane in delhi_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:10:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of sugarcane in hyderabad_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:11:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of sugarcane in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:12:00.0000000+05:30"
+    },
+    {
+        "text":  "[hindi] Market price of sugarcane in bengaluru_market",
+        "category":  "market_price",
+        "language":  "hindi",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:13:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of rice in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:14:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of rice in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:15:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of rice in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:16:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of rice in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "rice",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:17:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of wheat in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:18:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of wheat in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:19:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of wheat in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:20:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of wheat in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "wheat",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:21:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of maize in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:22:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of maize in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:23:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of maize in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:24:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of maize in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "maize",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:25:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of cotton in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:26:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of cotton in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:27:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of cotton in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:28:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of cotton in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "cotton",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:29:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of chickpea in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:30:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of chickpea in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:31:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of chickpea in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:32:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of chickpea in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "chickpea",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:33:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of groundnut in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:34:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of groundnut in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:35:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of groundnut in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:36:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of groundnut in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "groundnut",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:37:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of millet in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:38:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of millet in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:39:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of millet in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:40:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of millet in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "millet",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:41:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of sugarcane in delhi_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "delhi_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:42:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of sugarcane in hyderabad_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "hyderabad_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:43:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of sugarcane in mumbai_apmc",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "mumbai_apmc",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:44:00.0000000+05:30"
+    },
+    {
+        "text":  "[telugu] Market price of sugarcane in bengaluru_market",
+        "category":  "market_price",
+        "language":  "telugu",
+        "metadata":  {
+                         "crop":  "sugarcane",
+                         "market":  "bengaluru_market",
+                         "unit":  "quintal"
+                     },
+        "expected_response":  {
+                                  "type":  "market_price",
+                                  "trend":  "volatile",
+                                  "note":  "Synthetic sample"
+                              },
+        "timestamp":  "2025-01-10T15:45:00.0000000+05:30"
+    }
+]
